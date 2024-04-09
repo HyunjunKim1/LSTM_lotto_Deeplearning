@@ -26,9 +26,9 @@ row_count = len(rows)
 print(row_count)
 
 def numbers2ohbin(numbers):
-    ohbin = np.zeros(45) # ¹øÈ£ 45°³
-    for i in range(6): # ´çÃ·¹øÈ£ ¹İº¹
-        ohbin[int(numbers[i]) - 1] = 1 # Vector idx ½ÃÀÛÀº 0ºÎÅÍ½ÃÀÛÇÏµµ·Ï
+    ohbin = np.zeros(45) 
+    for i in range(6): 
+        ohbin[int(numbers[i]) - 1] = 1 
         
     return ohbin
 
@@ -61,7 +61,7 @@ test_idx = (901, len(x_samples))
 print("train : {0}, val : {1}, test : {2}".format(train_idx,val_idx,test_idx))
 
 #####################################################################################
-# ¸ğµ¨ Á¤ÀÇ ¹× ÄÄÆÄÀÏ, ÇĞ½À
+# ëª¨ë¸ ìƒì„± ë° í•™ìŠµ
 #####################################################################################
 
 model = keras.Sequential([
